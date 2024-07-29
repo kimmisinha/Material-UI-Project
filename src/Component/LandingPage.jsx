@@ -25,10 +25,11 @@ const LandingPage = () => {
           component="h1"
           gutterBottom
           sx={{
-            marginTop: "-2.5rem",
+            marginTop: "-3.5rem",
             fontWeight: 900,
             color: "white",
             fontFamily: "Roboto, sans-serif",
+            marginRight: "3.0rem",
           }}
         >
           Your story starts with us.
@@ -42,7 +43,7 @@ const LandingPage = () => {
             fontWeight: 400,
             fontFamily: "Roboto, sans-serif",
             color: "white",
-            marginRight: "4.5rem",
+            marginRight: "3.0rem",
           }}
         >
           This is a simple example of a Landing Page you can build using
@@ -64,13 +65,14 @@ const LandingPage = () => {
           <Paper
             elevation={3}
             sx={{
-              marginLeft: "20px",
-              width: "350px",
               border: "9px",
-              height: "160px",
               padding: "1rem",
               textAlign: "center",
-              margin: "5px",
+              margin: "1px",
+              marginLeft: "25px",
+
+              width: "390px",
+              height: "190px",
             }}
           >
             <Box
@@ -109,15 +111,15 @@ const LandingPage = () => {
         </Grid>
         <Grid item xs={12} sm={4}>
           <Paper
-            elevation={3}
+            // elevation={3}
             sx={{
-              marginLeft: "20px",
-              width: "350px",
+              width: "390px",
+              height: "190px",
               border: "9px",
-              height: "160px",
               padding: "1rem",
               textAlign: "center",
-              margin: "5px",
+              margin: "1px",
+              marginRight: "0px",
             }}
           >
             <Box
@@ -158,13 +160,16 @@ const LandingPage = () => {
           <Paper
             elevation={3}
             sx={{
-              marginLeft: "20px",
-              width: "350px",
               border: "9px",
-              height: "160px",
+
               padding: "1rem",
               textAlign: "center",
-              margin: "5px",
+              margin: "1px",
+              width: "390px",
+              height: "190px",
+              // marginLeft: "200px",
+              marginLeft: "-25px",
+
             }}
           >
             <Box

@@ -30,9 +30,9 @@ const TeamPage = () => {
             Read More
           </Button>
         </Box>
-        <Box sx={{ maxWidth: '40%' }}>
+        <Box sx={{ maxWidth: '36%' }}>
           <Card>
-            <CardMedia
+            <CardMedia 
               component="img"
               height="200"
               image={teaamwork}

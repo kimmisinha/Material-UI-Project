@@ -5,7 +5,13 @@ import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
-
+import { Link } from "react-router-dom";
+import LandingPage from "./LandingPage";
+import TeamPage from "./TeamPage";
+import OurTeam from "./OurTeam";
+import CoWorking from "./CoWorking";
+import ContactUs from "./ContactUs";
+import Footer from "./Footer";
 const buttonsize = {
   fontSize: "12px",
   marginTop: "13px",
@@ -36,6 +42,7 @@ const customTheme = createTheme({
   },
 });
 
+
 const Navbar = () => {
   return (
     <Box>
@@ -54,11 +61,11 @@ const Navbar = () => {
           <Typography
             variant="h6"
             component="div"
-            sx={{ flexGrow: 0.5, fontSize: "14px" }}
+            sx={{ flexGrow: 0.5, fontSize: "14px" ,marginLeft:"50px"}}
           >
             Material Tailwind React
           </Typography>
-          <Box sx={{ display: "flex", justifyContent: "center", flexGrow: 2 }}>
+          <Box sx={{ display: "flex", justifyContent: "center", flexGrow: 3 }}>
             <Button sx={buttonsize} color="inherit">
               Home
             </Button>
@@ -98,8 +105,16 @@ const Navbar = () => {
           </Box>
         </Toolbar>
       </AppBar>
+      <LandingPage/>
+      <TeamPage/>
+      <OurTeam/>
+      <CoWorking/>
+      <ContactUs/>
+      <Footer/>
     </Box>
   );
 };
+
+
 
 export default Navbar;

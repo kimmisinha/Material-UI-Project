@@ -1,27 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
-import Navbar from './Component/Navbar';
-import Footer from "./Component/Footer";
-import Home from "./Component/Home";
-import Signup from "./Component/Signup";
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Navbar from "./Component/Navbar";
 import SignIn from "./Component/SignIn";
-import LandingPage from "./Component/LandingPage";
-import TeamPage from "./Component/TeamPage";
-import OurTeam from "./Component/OurTeam";
-import CoWorking from "./Component/CoWorking";
+import Signup from "./Component/Signup";
+import LandingPage from "./Component/LandingPage"
+import Profile from "./Component/Profile";
 function App() {
   return (
-    <div className="App">
-      <Navbar />
-      <LandingPage/>
-      <TeamPage/>
-      <OurTeam/>
-      <CoWorking/>
-     <Footer/>
-     <Home/>
-     <Signup/>
-     <SignIn/>
-    </div>
+    <Router>
+      <div className="App">
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<LandingPage />} />
+          <Route path="/signin" element={<SignIn />} />
+          <Route path="/signup" element={<Signup />} />
+          <Route path="/profile" element={<Profile />} />
+
+        </Routes>
+      </div>
+    </Router>
   );
 }
 
