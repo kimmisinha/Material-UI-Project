@@ -25,8 +25,8 @@ const LandingPage = () => {
           component="h1"
           gutterBottom
           sx={{
-            marginTop: "-3.5rem",
-            fontWeight: 900,
+            marginTop: "-3.9rem",
+            fontWeight: 790,
             color: "white",
             fontFamily: "Roboto, sans-serif",
             marginRight: "3.0rem",
@@ -77,7 +77,7 @@ const LandingPage = () => {
           >
             <Box
               sx={{
-                backgroundColor: "black",
+                backgroundColor: "rgb(51,51,51)",
                 borderRadius: "50%",
                 width: "40px",
                 height: "40px",
@@ -93,7 +93,7 @@ const LandingPage = () => {
               variant="h6"
               component="h2"
               gutterBottom
-              sx={{ fontWeight: "600" }}
+              sx={{ fontWeight: "600",paddingTop:"17px" }}
             >
               Awarded Agency
             </Typography>
@@ -102,6 +102,7 @@ const LandingPage = () => {
               sx={{
                 color: "rgb(160,175,182)",
                 fontFamily: "Roboto, sans-serif",
+                
               }}
             >
               Divide details about your product or agency work into parts. A
@@ -124,7 +125,7 @@ const LandingPage = () => {
           >
             <Box
               sx={{
-                backgroundColor: "black",
+                backgroundColor: "rgb(51,51,51)",
                 borderRadius: "50%",
                 width: "40px",
                 height: "40px",
@@ -140,7 +141,7 @@ const LandingPage = () => {
               variant="h6"
               component="h2"
               gutterBottom
-              sx={{ fontWeight: "600" }}
+              sx={{ fontWeight: "600" ,paddingTop:"17px"}}
             >
               Free Revisions
             </Typography>
@@ -174,7 +175,7 @@ const LandingPage = () => {
           >
             <Box
               sx={{
-                backgroundColor: "black",
+                backgroundColor: "rgb(51,51,51)",
                 borderRadius: "50%",
                 width: "40px",
                 height: "40px",
@@ -190,7 +191,7 @@ const LandingPage = () => {
               variant="h6"
               component="h2"
               gutterBottom
-              sx={{ fontWeight: "600" }}
+              sx={{ fontWeight: "600",paddingTop:"17px" }}
             >
               Verified Company
             </Typography>

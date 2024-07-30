@@ -16,12 +16,14 @@ import { Link, useNavigate } from "react-router-dom";
 const buttonsize = {
   fontSize: "12px",
   marginTop: "13px",
+  fontWeight:"700"
 };
 
 const proButtonStyle = {
   fontSize: "13px",
   marginTop: "13px",
   backgroundColor: "black",
+   fontWeight:"700",
   color: "white",
   "&:hover": {
     backgroundColor: "#2B2B2B",
@@ -33,6 +35,7 @@ const freeDownloadButtonStyle = {
   marginTop: "13px",
   backgroundColor: "#2B2B2B",
   color: "white",
+   fontWeight:"700"
 };
 
 const customTheme = createTheme({
@@ -72,7 +75,7 @@ const Navbar = () => {
           <Typography
             variant="h6"
             component="div"
-            sx={{ flexGrow: 0.5, fontSize: "14px" ,marginLeft:"50px"}}
+            sx={{ flexGrow: 0.5, fontSize: "14px" ,marginLeft:"50px", fontWeight:"700"}}
           >
             Material Tailwind React
           </Typography>
