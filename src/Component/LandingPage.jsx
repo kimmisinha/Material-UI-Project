@@ -16,7 +16,7 @@ const LandingPage = () => {
           backgroundColor: "black",
           color: "white",
           padding: "4rem",
-          width: "100%",
+          // width: "100%",
           fontFamily: "Roboto, sans-serif",
         }}
       >

@@ -23,7 +23,7 @@ const teamMembers = [
     socials: [
       <Twitter sx={{ color: 'rgb(49,151,243)' }} />,
       <LinkedIn sx={{ color: 'rgb(49,151,243)' }} />,
-      <Facebook sx={{ color: 'rgb(251,230,238)' }} />,
+      <Facebook sx={{ color: 'red' }} />,
     ],
   },
   {
@@ -33,7 +33,7 @@ const teamMembers = [
     socials: [
       <Twitter sx={{ color: 'rgb(49,151,243)' }} />,
       <LinkedIn sx={{ color: 'rgb(49,151,243)' }} />,
-      <Facebook sx={{ color: 'rgb(251,230,238)' }} />,
+      <Facebook sx={{ color: 'red' }} />,
     ],
   },
   {
@@ -43,7 +43,7 @@ const teamMembers = [
     socials: [
       <Twitter sx={{ color: 'rgb(49,151,243)' }} />,
       <LinkedIn sx={{ color: 'rgb(49,151,243)' }} />,
-      <Facebook sx={{ color: 'rgb(251,230,238)' }} />,
+      <Facebook sx={{ color: 'red' }} />,
     ],
   },
   {
@@ -53,7 +53,7 @@ const teamMembers = [
     socials: [
       <Twitter sx={{ color: 'rgb(49,151,243)' }} />,
       <LinkedIn sx={{ color: 'rgb(49,151,243)' }} />,
-      <Facebook sx={{ color: 'rgb(251,230,238)' }} />,
+      <Facebook sx={{ color: 'red' }} />,
     ],
   },
 ];
@@ -95,7 +95,7 @@ const OurTeam = () => {
           maximum.
         </Typography>
       </Box>
-      <Grid container spacing={10}>
+      <Grid container spacing={7} sx={{paddingLeft:"20px"}}>
         {teamMembers.map((member, index) => (
           <Grid item md={3} key={index} margin={"0px"}>
             <Card>
