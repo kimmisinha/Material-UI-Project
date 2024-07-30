@@ -5,13 +5,14 @@ import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
-import { Link } from "react-router-dom";
 import LandingPage from "./LandingPage";
 import TeamPage from "./TeamPage";
 import OurTeam from "./OurTeam";
 import CoWorking from "./CoWorking";
 import ContactUs from "./ContactUs";
 import Footer from "./Footer";
+import { Link, useNavigate } from "react-router-dom";
+
 const buttonsize = {
   fontSize: "12px",
   marginTop: "13px",
@@ -44,6 +45,16 @@ const customTheme = createTheme({
 
 
 const Navbar = () => {
+  const Navigate = useNavigate();
+  function handlesubmit() {
+    Navigate("/profile");
+  }
+  function handlesubmitTwo(){
+    Navigate("/signin");
+  }
+  function handlesubmitThree(){
+    Navigate("/signup");
+  }
   return (
     <Box>
       <AppBar
@@ -69,13 +80,13 @@ const Navbar = () => {
             <Button sx={buttonsize} color="inherit">
               Home
             </Button>
-            <Button sx={buttonsize} color="inherit">
+            <Button onClick={handlesubmit} sx={buttonsize} color="inherit">
               Profile
             </Button>
-            <Button sx={buttonsize} color="inherit">
+            <Button  onClick={handlesubmitTwo} sx={buttonsize} color="inherit">
               Sign In
             </Button>
-            <Button sx={buttonsize} color="inherit">
+            <Button  onClick={handlesubmitThree} sx={buttonsize} color="inherit">
               Sign Up
             </Button>
             <Button sx={buttonsize} color="inherit">

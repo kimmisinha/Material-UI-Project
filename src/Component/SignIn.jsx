@@ -1,41 +1,77 @@
-import React from 'react';
-import { TextField, Button, Checkbox, FormControlLabel, Typography, Container, Box, Link, Grid, Divider } from '@mui/material';
+import React from "react";
+import {
+  TextField,
+  Button,
+  Checkbox,
+  FormControlLabel,
+  Typography,
+  Container,
+  Box,
+  Link,
+  Divider,
+} from "@mui/material";
+import Black from "../assets/Black.webp";
 
 const SignIn = () => {
+  
+
+const freeDownloadButtonStyle = {
+  backgroundColor: "#2B2B2B",
+
+};
   return (
-    <Container maxWidth="md">
+    <Container>
       <Box
         sx={{
-          display: 'flex',
-          flexDirection: 'row',
-          alignItems: 'center',
-          mt: 4,
-          boxShadow: 3,
-          borderRadius: 2,
-          overflow: 'hidden'
+          display: "flex",
+          alignItems: "stretch",
+          height: "100vh",
         }}
       >
         <Box
           sx={{
             flex: 1,
-            backgroundColor: '#000',
-            display: { xs: 'none', md: 'block' }
+            display: { xs: "none", md: "block" },
+            position: "relative",
           }}
         >
-          {/* Placeholder for the image */}
+          <img
+            src={Black}
+            alt="Sign In"
+            style={{
+              width: "100%",
+              height: "100%",
+              objectFit: "cover",
+              borderRadius: "20px",
+              marginLeft: "-120px",
+              marginTop: "20px",
+            }}
+          />
         </Box>
         <Box
           sx={{
             flex: 1,
-            p: 4
+            marginLeft: "50px",
+            p: 4,
+            display: "flex",
+            flexDirection: "column",
+            justifyContent: "center",
           }}
         >
-          <Typography variant="h5" component="h1" gutterBottom>
+          <Typography
+            variant="h4"
+            component="h2"
+            gutterBottom
+            marginLeft="90px"
+            sx={{ fontWeight: "bold" }}
+          >
             Join Us Today
           </Typography>
-          <Typography variant="body1" gutterBottom>
+          <Typography gutterBottom marginLeft="90px" fontSize="19px" >
             Enter your email and password to register.
           </Typography>
+          <label style={{ marginTop: "20px" }}>Your email</label>
+
           <TextField
             label="Your email"
             type="email"
@@ -47,18 +83,24 @@ const SignIn = () => {
             control={<Checkbox />}
             label={
               <Typography variant="body2">
-                I agree the <Link href="#">Terms and Conditions</Link>
+                I agree to the <Link href="#">Terms and Conditions</Link>
               </Typography>
             }
           />
-          <Button variant="contained" color="primary" fullWidth sx={{ mt: 2, mb: 2 }}>
+          <Button
+
+            
+            fullWidth
+            sx={{ mt: 2, mb: 2 ,color:"white", backgroundColor: "#2B2B2B",}}
+          >
             Register Now
           </Button>
           <Divider sx={{ mb: 2 }}>or</Divider>
           <Button variant="outlined" fullWidth sx={{ mb: 1 }}>
             Sign in with Google
           </Button>
-          <Button variant="outlined" fullWidth>
+          <Button variant="outlined" fullWidth
+          >
             Sign in with Twitter
           </Button>
           <Typography variant="body2" align="center" sx={{ mt: 2 }}>
