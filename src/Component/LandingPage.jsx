@@ -1,7 +1,9 @@
 import React from "react";
 import { Container, Box, Typography, Grid, Paper } from "@mui/material";
 import ChatIcon from "@mui/icons-material/Chat";
-
+import Card from "@mui/material/Card";
+import CardHeader from "@mui/material/CardHeader";
+import CardContent from "@mui/material/CardContent";
 const LandingPage = () => {
   return (
     <Container maxWidth={false} disableGutters>
@@ -49,25 +51,71 @@ const LandingPage = () => {
           Design by Google.
         </Typography>
       </Box>
-      <Grid
-        container
-        spacing={4}
-        sx={{
-          marginTop: "-4rem",
-          transform: "translateY(-30%)",
-        }}
-      >
-        <Grid item xs={12} sm={4}>
-          <Paper
+      <div style={{ padding: "0px 20px 0px 60px" }}>
+        <Grid
+          container
+          // spacing={4}
+          sx={{
+            marginTop: "-8rem",
+          }}
+        >
+          <Grid item xs={12} sm={4} sx={{padding: "10px"}}>
+            <Card sx={{ maxWidth: 400, maxHeight: 233 }}>
+              <Typography
+                sx={{
+                  backgroundColor: "rgb(51,51,51)",
+                  borderRadius: "50%",
+                  width: "40px",
+                  height: "40px",
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  margin: "auto",
+                  marginTop: "26px",
+                }}
+              >
+                <ChatIcon fontSize="small" sx={{ color: "white" ,adding: "0px 90px 0px"}} />
+              </Typography>
+              <CardHeader
+                title="  Awarded Agency"
+                component="h2"
+                gutterBottom
+                variant="h6"
+                sx={{ fontWeight: "600", padding: "0px 90px 0px" }}
+              />
+
+              <CardContent sx={{padding: 0}}>
+                <Typography
+                  variant="body1"
+                  color="text.secondary"
+                  sx={{
+                    color: "rgb(160,175,182)",
+                    fontFamily: "Roboto, sans-serif",
+                    padding: "0px 10px 15px 15px",
+                    // border:"1px solid blue"
+                  }}
+                >
+                  Divide details about your product or agency work into parts. A
+                  paragraph describing a feature will be enough.
+                </Typography>
+              </CardContent>
+            </Card>
+            {/* <Paper
             elevation={3}
             sx={{
+           
               border: "9px",
-              padding: "1rem",
+              // padding: "1rem",
               textAlign: "center",
               margin: "1px",
               marginLeft: "25px",
               width: "390px",
               height: "190px",
+              // paddingTop:"20px",
+              // marginRight: "500px",
+
+              // marginLeft:"20px"
+              // marginRight:"710px"
             }}
           >
             <Box
@@ -102,19 +150,200 @@ const LandingPage = () => {
               Divide details about your product or agency work into parts. A
               paragraph describing a feature will be enough.
             </Typography>
-          </Paper>
-        </Grid>
-        <Grid item xs={12} sm={4}>
-          <Paper
+          </Paper> */}
+          </Grid>
+          <Grid item xs={12} sm={4}>
+            <Card sx={{ maxWidth: 400, maxHeight: 233 }}>
+              <Typography
+                sx={{
+                  backgroundColor: "rgb(51,51,51)",
+                  borderRadius: "50%",
+                  width: "40px",
+                  height: "40px",
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  margin: "auto",
+                }}
+              >
+                <ChatIcon fontSize="small" sx={{ color: "white" }} />
+              </Typography>
+              <CardHeader
+                title="  Awarded Agency"
+                variant="h6"
+                component="h2"
+                gutterBottom
+                sx={{ fontWeight: "600" }}
+              />
+
+              <CardContent>
+                <Typography
+                  variant="body1"
+                  color="text.secondary"
+                  sx={{
+                    color: "rgb(160,175,182)",
+                    fontFamily: "Roboto, sans-serif",
+                  }}
+                >
+                  Divide details about your product or agency work into parts. A
+                  paragraph describing a feature will be enough.
+                </Typography>
+              </CardContent>
+            </Card>
+            {/* <Paper
+            elevation={3}
+            sx={{
+           
+              border: "9px",
+              // padding: "1rem",
+              textAlign: "center",
+              margin: "1px",
+              marginLeft: "25px",
+              width: "390px",
+              height: "190px",
+              // paddingTop:"20px",
+              // marginRight: "500px",
+
+              // marginLeft:"20px"
+              // marginRight:"710px"
+            }}
+          >
+            <Box
+              sx={{
+                backgroundColor: "rgb(51,51,51)",
+                borderRadius: "50%",
+                width: "40px",
+                height: "40px",
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+                margin: "auto",
+              }}
+            >
+              <ChatIcon fontSize="small" sx={{ color: "white" }} />
+            </Box>
+            <Typography
+              variant="h6"
+              component="h2"
+              gutterBottom
+              sx={{ fontWeight: "600", paddingTop: "19px" }}
+            >
+              Awarded Agency
+            </Typography>
+            <Typography
+              variant="body1"
+              sx={{
+                color: "rgb(160,175,182)",
+                fontFamily: "Roboto, sans-serif",
+              }}
+            >
+              Divide details about your product or agency work into parts. A
+              paragraph describing a feature will be enough.
+            </Typography>
+          </Paper> */}
+          </Grid>
+
+          <Grid item xs={12} sm={4}>
+            <Card sx={{ maxWidth: 400, maxHeight: 233 }}>
+              <Typography
+                sx={{
+                  backgroundColor: "rgb(51,51,51)",
+                  borderRadius: "50%",
+                  width: "40px",
+                  height: "40px",
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  margin: "auto",
+                }}
+              >
+                <ChatIcon fontSize="small" sx={{ color: "white" }} />
+              </Typography>
+              <CardHeader
+                title="  Awarded Agency"
+                variant="h6"
+                component="h2"
+                gutterBottom
+                sx={{ fontWeight: "600" }}
+              />
+
+              <CardContent>
+                <Typography
+                  variant="body1"
+                  color="text.secondary"
+                  sx={{
+                    color: "rgb(160,175,182)",
+                    fontFamily: "Roboto, sans-serif",
+                  }}
+                >
+                  Divide details about your product or agency work into parts. A
+                  paragraph describing a feature will be enough.
+                </Typography>
+              </CardContent>
+            </Card>
+            {/* <Paper
+            elevation={3}
+            sx={{
+           
+              border: "9px",
+              // padding: "1rem",
+              textAlign: "center",
+              margin: "1px",
+              marginLeft: "25px",
+              width: "390px",
+              height: "190px",
+              // paddingTop:"20px",
+              // marginRight: "500px",
+
+              // marginLeft:"20px"
+              // marginRight:"710px"
+            }}
+          >
+            <Box
+              sx={{
+                backgroundColor: "rgb(51,51,51)",
+                borderRadius: "50%",
+                width: "40px",
+                height: "40px",
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+                margin: "auto",
+              }}
+            >
+              <ChatIcon fontSize="small" sx={{ color: "white" }} />
+            </Box>
+            <Typography
+              variant="h6"
+              component="h2"
+              gutterBottom
+              sx={{ fontWeight: "600", paddingTop: "19px" }}
+            >
+              Awarded Agency
+            </Typography>
+            <Typography
+              variant="body1"
+              sx={{
+                color: "rgb(160,175,182)",
+                fontFamily: "Roboto, sans-serif",
+              }}
+            >
+              Divide details about your product or agency work into parts. A
+              paragraph describing a feature will be enough.
+            </Typography>
+          </Paper> */}
+          </Grid>
+
+          {/* <Paper
             // elevation={3}
             sx={{
               width: "390px",
               height: "190px",
               border: "9px",
-              padding: "1rem",
+              // padding: "1rem",
               textAlign: "center",
               margin: "1px",
-              marginRight: "0px",
+              // marginRight: "0px",
             }}
           >
             <Box
@@ -149,56 +378,9 @@ const LandingPage = () => {
               Keep your user engaged by providing meaningful information.
               Remember that by this time, the user is curious.
             </Typography>
-          </Paper>
+          </Paper> */}
         </Grid>
-        <Grid item xs={12} sm={4}>
-          <Paper
-            elevation={3}
-            sx={{
-              border: "9px",
-              padding: "1rem",
-              textAlign: "center",
-              margin: "1px",
-              width: "390px",
-              height: "190px",
-              marginLeft: "-25px",
-            }}
-          >
-            <Box
-              sx={{
-                backgroundColor: "rgb(51,51,51)",
-                borderRadius: "50%",
-                width: "40px",
-                height: "40px",
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "center",
-                margin: "auto",
-              }}
-            >
-              <ChatIcon fontSize="small" sx={{ color: "white" }} />
-            </Box>
-            <Typography
-              variant="h6"
-              component="h2"
-              gutterBottom
-              sx={{ fontWeight: "600", paddingTop: "19px" }}
-            >
-              Verified Company
-            </Typography>
-            <Typography
-              variant="body1"
-              sx={{
-                color: "rgb(160,175,182)",
-                fontFamily: "Roboto, sans-serif",
-              }}
-            >
-              Write a few lines about each one. A paragraph describing a feature
-              will be enough. Keep your user engaged!
-            </Typography>
-          </Paper>
-        </Grid>
-      </Grid>
+      </div>
     </Container>
   );
 };

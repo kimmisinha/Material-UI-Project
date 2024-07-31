@@ -32,6 +32,7 @@ const TeamPage = () => {
               padding: "0.5rem",
               borderRadius: "50%",
               marginBottom: "1rem",
+              marginTop:"60px"
             }}
           >
             <FingerprintIcon fontSize="large" sx={{ color: "white" }} />
@@ -78,7 +79,7 @@ const TeamPage = () => {
               height="200"
               image={teamwork}
               borderRadius="5"
-              sx={{ maxWidth: "90%", objectFit: "cover",height:"140",marginTop:"20px",marginLeft:"20px",borderRadius:"5px"}}
+              sx={{ maxWidth: "90%", objectFit: "cover",height:"140",marginTop:"50px",marginLeft:"20px",borderRadius:"5px"}}
               alt="Top Notch Services"
             />
             <CardContent>

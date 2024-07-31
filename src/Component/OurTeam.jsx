@@ -21,7 +21,7 @@ const teamMembers = [
     title: "Web Developer",
     image: team1,
     socials: [
-      <Twitter sx={{ color: 'rgb(49,151,243)' }} />,
+      <Twitter sx={{ color: 'rgb(49,11,243)' }} />,
       <LinkedIn sx={{ color: 'rgb(49,151,243)' }} />,
       <Facebook sx={{ color: 'red' }} />,
     ],
