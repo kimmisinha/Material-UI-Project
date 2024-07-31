@@ -61,7 +61,6 @@ const Navbar = () => {
   return (
     <Box>
       <AppBar
-        position="static"
         sx={{
           backgroundColor: "black",
           color: "white",

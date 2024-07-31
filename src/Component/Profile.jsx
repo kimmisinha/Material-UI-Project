@@ -70,7 +70,6 @@ function Profile() {
             fontFamily: "Roboto, sans-serif",
             fontWeight: "700",
             cursor: "pointer",
-            height: "270px",
           }}
         >
           <Toolbar>
@@ -134,6 +133,7 @@ function Profile() {
         </AppBar>
       </Box>
       {/* 2 box */}
+      <Box sx={{ height: "30%", backgroundColor: "#000000" }}></Box>
       <Paper
         elevation={3}
         style={{ padding: "20px", maxWidth: "600px", marginRight: "-200px" }}
@@ -217,6 +217,31 @@ function Profile() {
             </Typography>
           </Grid>
         </Grid>
+        <Box
+          sx={{
+            display: "flex",
+            justifyContent: "space-between",
+            marginTop: "20px",
+            marginRight: "40px",
+            position: "absolute",
+            top: "300px",
+            right: "50px",
+            display: "block",
+          }}
+        >
+          <Box textAlign="center " sx={{ display: "flex" }}>
+            <Typography variant="body2">10</Typography>
+            <Typography variant="h6">Friends</Typography>
+          </Box>
+          <Box textAlign="center">
+            <Typography variant="body2">89</Typography>
+            <Typography variant="h6">Photos</Typography>
+          </Box>
+          <Box textAlign="center">
+            <Typography variant="body2">22</Typography>
+            <Typography variant="h6">Comments</Typography>
+          </Box>
+        </Box>
       </Paper>
     </>
   );
