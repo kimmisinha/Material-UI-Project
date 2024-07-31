@@ -16,8 +16,8 @@ const LandingPage = () => {
           backgroundColor: "black",
           color: "white",
           padding: "4rem",
-          // width: "100%",
           fontFamily: "Roboto, sans-serif",
+          height: "83vh",
         }}
       >
         <Typography
@@ -25,11 +25,9 @@ const LandingPage = () => {
           component="h1"
           gutterBottom
           sx={{
-            marginTop: "-3.9rem",
-            fontWeight: 790,
+            fontWeight: 700,
             color: "white",
-            fontFamily: "Roboto, sans-serif",
-            marginRight: "3.0rem",
+            marginBottom: "1rem",
           }}
         >
           Your story starts with us.
@@ -41,9 +39,8 @@ const LandingPage = () => {
           sx={{
             whiteSpace: "pre-line",
             fontWeight: 400,
-            fontFamily: "Roboto, sans-serif",
             color: "white",
-            marginRight: "3.0rem",
+            marginBottom: "2rem",
           }}
         >
           This is a simple example of a Landing Page you can build using
@@ -56,8 +53,7 @@ const LandingPage = () => {
         container
         spacing={4}
         sx={{
-          margin: "10px",
-          marginTop: "-2rem",
+          marginTop: "-4rem",
           transform: "translateY(-30%)",
         }}
       >
@@ -70,7 +66,6 @@ const LandingPage = () => {
               textAlign: "center",
               margin: "1px",
               marginLeft: "25px",
-
               width: "390px",
               height: "190px",
             }}
@@ -93,7 +88,7 @@ const LandingPage = () => {
               variant="h6"
               component="h2"
               gutterBottom
-              sx={{ fontWeight: "600",paddingTop:"17px" }}
+              sx={{ fontWeight: "600", paddingTop: "19px" }}
             >
               Awarded Agency
             </Typography>
@@ -102,7 +97,6 @@ const LandingPage = () => {
               sx={{
                 color: "rgb(160,175,182)",
                 fontFamily: "Roboto, sans-serif",
-                
               }}
             >
               Divide details about your product or agency work into parts. A
@@ -141,7 +135,7 @@ const LandingPage = () => {
               variant="h6"
               component="h2"
               gutterBottom
-              sx={{ fontWeight: "600" ,paddingTop:"17px"}}
+              sx={{ fontWeight: "600", paddingTop: "19px" }}
             >
               Free Revisions
             </Typography>
@@ -162,15 +156,12 @@ const LandingPage = () => {
             elevation={3}
             sx={{
               border: "9px",
-
               padding: "1rem",
               textAlign: "center",
               margin: "1px",
               width: "390px",
               height: "190px",
-              // marginLeft: "200px",
               marginLeft: "-25px",
-
             }}
           >
             <Box
@@ -191,7 +182,7 @@ const LandingPage = () => {
               variant="h6"
               component="h2"
               gutterBottom
-              sx={{ fontWeight: "600",paddingTop:"17px" }}
+              sx={{ fontWeight: "600", paddingTop: "19px" }}
             >
               Verified Company
             </Typography>

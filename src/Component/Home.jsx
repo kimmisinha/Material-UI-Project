@@ -13,11 +13,11 @@ const Home = () => {
     <Box>
       <Navbar />
       <LandingPage />
-      <TeamPage />
+       <TeamPage />
       <OurTeam />
       <CoWorking />
       <ContactUs />
-      <Footer />
+      <Footer /> 
     </Box>
   );
 };
