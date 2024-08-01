@@ -25,7 +25,6 @@ const ContactUs = () => {
         sx={{
           display: "flex",
           flexDirection: "column",
-          alignItems: "center",
           mt: 4,
         }}
       >
@@ -34,6 +33,7 @@ const ContactUs = () => {
           component="h3"
           gutterBottom
           sx={{ fontWeight: 900, marginTop: "100px" }}
+          textAlign='center'
         >
           Contact Us
         </Typography>
@@ -43,6 +43,7 @@ const ContactUs = () => {
           gutterBottom
           color="rgb(38,50,56)"
           sx={{ fontWeight: "bold" }}
+          textAlign='center'
         >
           Want to work with us?
         </Typography>
@@ -85,7 +86,7 @@ const ContactUs = () => {
           rows={4}
         />
         {/* Applied alignItems: "start" to the parent Box of Checkbox and Label */}
-        <Box sx={{ alignItems: "stretch",flex:"start" }}>
+        <Box >
           <FormControlLabel 
             control={
               <Checkbox

@@ -7,15 +7,8 @@ import TwitterIcon from "@mui/icons-material/Twitter";
 
 const Footer = () => {
   return (
-    <Box
-      component="footer"
-      sx={{
-        py: 3,
-        px: 2,
-        mt: 20,
-      }}
-    >
-      <Container maxWidth="lg">
+    
+      <Container disableGutters style={{marginTop: "50px"}} >
         <Grid container spacing={4}>
           <Grid item xs={12} sm={4}>
             <Typography
@@ -151,7 +144,7 @@ const Footer = () => {
           {new Date().getFullYear()}.
         </Typography>
       </Container>
-    </Box>
+   
   );
 };
 
