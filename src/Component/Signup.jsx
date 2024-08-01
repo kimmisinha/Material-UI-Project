@@ -1,119 +1,3 @@
-// import React from "react";
-// import {
-//   TextField,
-//   Button,
-//   Checkbox,
-//   FormControlLabel,
-//   Typography,
-//   Container,
-//   Box,
-//   Link,
-//   Divider,
-// } from "@mui/material";
-// import Black from "../assets/Black.webp";
-
-// const Signup = () => {
-//   const freeDownloadButtonStyle = {
-//     backgroundColor: "#2B2B2B",
-//   };
-
-//   return (
-//     <Container>
-//       <Box
-//         sx={{
-//           display: "flex",
-//           alignItems: "stretch",
-//           height: "100vh",
-//         }}
-//       >
-//         <Box
-//           sx={{
-//             flex: 1,
-//             marginRight: "50px",
-//             p: 4,
-//             display: "flex",
-//             flexDirection: "column",
-//             justifyContent: "center",
-//           }}
-//         >
-//           <Typography
-//             variant="h4"
-//             component="h2"
-//             gutterBottom
-//             sx={{ fontWeight: "bold", marginLeft: "190px" }}
-//           >
-//             Sign In
-//           </Typography>
-//           <Typography gutterBottom fontSize="19px">
-//             Enter your email and password to register.
-//           </Typography>
-//           <label style={{ marginTop: "20px" }}>Your email</label>
-
-//           <TextField
-//             label="Your email"
-//             type="email"
-//             variant="outlined"
-//             fullWidth
-//             margin="normal"
-//           />
-//           <FormControlLabel
-//             control={<Checkbox />}
-//             label={
-//               <Typography variant="body2">
-//                 I agree to the <Link href="#">Terms and Conditions</Link>
-//               </Typography>
-//             }
-//           />
-//           <Button
-//             fullWidth
-//             sx={{ mt: 2, mb: 2, color: "white", backgroundColor: "#2B2B2B" }}
-//           >
-//             Register Now
-//           </Button>
-//           <Divider sx={{ mb: 2 }}>or</Divider>
-//           <Button variant="outlined" fullWidth sx={{ mb: 1 }}>
-//             Sign in with Google
-//           </Button>
-//           <Button variant="outlined" fullWidth>
-//             Sign in with Twitter
-//           </Button>
-//           <Typography variant="body2" align="center" sx={{ mt: 2 }}>
-//             Already have an account? <Link href="#">Sign in</Link>
-//           </Typography>
-//         </Box>
-
-//         <Box
-//           sx={{
-//             flex: 1,
-//             display: { xs: "none", md: "block" },
-//             position: "relative",
-//           }}
-//         >
-//           <img
-//             src={Black}
-//             alt="Sign In"
-//             style={{
-//               width: "105%",
-//               height: "100%",
-//               objectFit: "cover",
-//               borderRadius: "20px",
-//               marginTop: "20px",
-//               // marginLeft:"500px"
-//               marginLeft: "70px",
-//             }}
-//           />
-//         </Box>
-//       </Box>
-//     </Container>
-//   );
-// };
-
-// export default Signup;
-
-
-
-
-
 import React from "react";
 import {
   TextField,
@@ -127,12 +11,14 @@ import {
   Divider,
 } from "@mui/material";
 import Black from "../assets/Black.webp";
+import { useNavigate } from "react-router-dom";
 
 const Signup = () => {
-  const freeDownloadButtonStyle = {
-    backgroundColor: "#2B2B2B",
-  };
+  const Navigate = useNavigate();
 
+  function handlesubmitsign() {
+    Navigate("/signin");
+  }
   return (
     <Container>
       <Box
@@ -142,6 +28,7 @@ const Signup = () => {
           height: "100vh",
         }}
       >
+        {/* Image Section */}
         <Box
           sx={{
             flex: 1,
@@ -162,6 +49,8 @@ const Signup = () => {
             }}
           />
         </Box>
+
+        {/* Form Section */}
         <Box
           sx={{
             flex: 1,
@@ -170,46 +59,82 @@ const Signup = () => {
             display: "flex",
             flexDirection: "column",
             justifyContent: "center",
+            padding: " 100px 50px 100px 0px",
           }}
         >
           <Typography
             variant="h4"
             component="h2"
             gutterBottom
-            marginLeft="90px"
-            sx={{ fontWeight: "bold" }}
+            sx={{ fontWeight: "bold", textAlign: "center" }}
           >
             Join Us Today
           </Typography>
-          <Typography gutterBottom marginLeft="90px" fontSize="19px">
+          <Typography
+            gutterBottom
+            fontSize="19px"
+            sx={{ textAlign: "center", mb: 3, color: "rgb(69,79,84)" }}
+          >
             Enter your email and password to register.
           </Typography>
-          <label style={{ marginTop: "20px" }}>Your email</label>
 
+          <Typography
+            variant="body2"
+            sx={{ marginTop: "20px", color: "rgb(69,79,84)" }}
+          >
+            Your email
+          </Typography>
           <TextField
             label="Your email"
             type="email"
             variant="outlined"
             fullWidth
             margin="normal"
+            sx={{ mb: 2 }}
           />
+
           <FormControlLabel
-            control={<Checkbox sx={{ color: 'black', '&.Mui-checked': { color: 'black' } }} />}
+            control={
+              <Checkbox
+                sx={{ color: "black", "&.Mui-checked": { color: "black" } }}
+              />
+            }
             label={
-              <Typography variant="body2" sx={{ color: 'black' }}>
-                I agree to the <Link href="#" sx={{ color: 'black' }}>Terms and Conditions</Link>
+              <Typography variant="body2" sx={{ color: "black" }}>
+                I agree to the{" "}
+                <Link href="#" sx={{ color: "black" }}>
+                  Terms and Conditions
+                </Link>
               </Typography>
             }
           />
+
           <Button
             fullWidth
-            sx={{ mt: 2, mb: 2, color: "white", backgroundColor: "#2B2B2B" }}
+            sx={{
+              mt: 2,
+              mb: 2,
+              color: "white",
+              backgroundColor: "#2B2B2B",
+              "&:hover": {
+                backgroundColor: "#1f1f1f",
+              },
+            }}
           >
             Register Now
           </Button>
+
           <Divider sx={{ mb: 2 }}>or</Divider>
-          <Typography variant="body2" align="center" sx={{ mt: 2, color: 'black' }}>
-            Already have an account? <Link href="#" sx={{ color: 'black' }}>Sign in</Link>
+
+          <Typography
+            variant="body2"
+            align="center"
+            sx={{ mt: 2, color: "black" }}
+          >
+            Already have an account?{" "}
+            <Link href="#" onClick={handlesubmitsign} sx={{ color: "black" }}>
+              Sign in
+            </Link>
           </Typography>
         </Box>
       </Box>

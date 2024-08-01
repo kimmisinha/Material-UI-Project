@@ -45,24 +45,22 @@ const SignIn = () => {
             variant="h4"
             component="h2"
             gutterBottom
-            sx={{ fontWeight: "bold", marginLeft: "190px" }}
+            sx={{ fontWeight: "bold", textAlign: "center" }}
           >
             Sign In
           </Typography>
-          <Typography gutterBottom fontSize="19px">
+          <Typography gutterBottom fontSize="19px" sx={{ textAlign: "center" }}>
             Enter your email and password to sign in.
           </Typography>
-          <label style={{ marginTop: "20px" }}>Your email</label>
+          <label style={{ marginTop: "20px", fontSize: "14px", fontWeight: "bold", color: "black" }}>Your email</label>
           <TextField
-            label="Your email"
             type="email"
             variant="outlined"
             fullWidth
             margin="normal"
           />
-          <label style={{ marginTop: "20px" }}>Password</label>
+          <label style={{ marginTop: "20px", fontSize: "14px", fontWeight: "bold", color: "black" }}>Password</label>
           <TextField
-            label="Password"
             type="password"
             variant="outlined"
             fullWidth
