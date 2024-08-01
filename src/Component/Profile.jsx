@@ -10,18 +10,32 @@ import { createTheme, ThemeProvider } from "@mui/material/styles";
 import { useNavigate } from "react-router-dom";
 import image from "../assets/team-5.webp";
 import Navbar from "./Navbar";
-
+import { Container } from "@mui/material";
+import Footer from "./Footer";
 function Profile() {
   return (
     <>
       <Navbar />
       {/* 2 box */}
-      <Box sx={{ height: "30%", backgroundColor: "#000000" }}></Box>
-      <Paper
+
+      <Box
+      sx={{
+        width: "100vw",        
+        height: "35vh",        
+        backgroundColor: "black", 
+        display: "flex",     
+        alignItems: "center", 
+        justifyContent: "center" 
+      }}
+    >
+      {/* Content here if needed added button */}
+    </Box>
+
+      {/* <Paper
         elevation={3}
         style={{ padding: "20px", maxWidth: "600px", marginRight: "-200px" }}
-      >
-        <Grid container spacing={2}>
+      > */}
+        <Grid container spacing={2} elevation={3} style={{padding: "20px", maxWidth: "600px", marginRight: "-200px"}}>
           <Grid item xs={12} sm={8}>
             <Avatar
               alt="Remy Sharp"
@@ -125,7 +139,8 @@ function Profile() {
             <Typography variant="h6">Comments</Typography>
           </Box>
         </Box>
-      </Paper>
+      {/* </Paper> */}
+      <Footer/>
     </>
   );
 }

@@ -60,7 +60,7 @@ const teamMembers = [
 
 const OurTeam = () => {
   return (
-    <Container maxWidth="lg">
+    <Container  maxWidth={"xl"} style={{width:"100%"}}>
       <Box textAlign="center" sx={{ py: 5, marginTop: "130px" }}>
         <Typography
           variant="h7"
@@ -105,7 +105,6 @@ const OurTeam = () => {
                 width="400"
                 image={member.image}
                 alt={member.name}
-                // borderRadius="30px"
                margin="20px"
                marginTop="25px"
               />

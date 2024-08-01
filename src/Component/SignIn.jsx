@@ -8,17 +8,20 @@ import {
   Container,
   Box,
   Link,
-  Divider,
 } from "@mui/material";
 import Black from "../assets/Black.webp";
 
 const SignIn = () => {
-  
+  // Custom styles for checkbox
+  const checkboxStyle = {
+    '& .MuiCheckbox-root': {
+      color: 'black', // Color of the checkbox when unchecked
+    },
+    '& .Mui-checked': {
+      color: 'black', // Color of the checkbox when checked
+    },
+  };
 
-const freeDownloadButtonStyle = {
-  backgroundColor: "#2B2B2B",
-
-};
   return (
     <Container>
       <Box
@@ -31,27 +34,7 @@ const freeDownloadButtonStyle = {
         <Box
           sx={{
             flex: 1,
-            display: { xs: "none", md: "block" },
-            position: "relative",
-          }}
-        >
-          <img
-            src={Black}
-            alt="Sign In"
-            style={{
-              width: "100%",
-              height: "100%",
-              objectFit: "cover",
-              borderRadius: "20px",
-              marginLeft: "-120px",
-              marginTop: "20px",
-            }}
-          />
-        </Box>
-        <Box
-          sx={{
-            flex: 1,
-            marginLeft: "50px",
+            marginRight: "50px",
             p: 4,
             display: "flex",
             flexDirection: "column",
@@ -62,16 +45,14 @@ const freeDownloadButtonStyle = {
             variant="h4"
             component="h2"
             gutterBottom
-            marginLeft="90px"
-            sx={{ fontWeight: "bold" }}
+            sx={{ fontWeight: "bold", marginLeft: "190px" }}
           >
-            Join Us Today
+            Sign In
           </Typography>
-          <Typography gutterBottom marginLeft="90px" fontSize="19px" >
-            Enter your email and password to register.
+          <Typography gutterBottom fontSize="19px">
+            Enter your email and password to sign in.
           </Typography>
           <label style={{ marginTop: "20px" }}>Your email</label>
-
           <TextField
             label="Your email"
             type="email"
@@ -79,33 +60,60 @@ const freeDownloadButtonStyle = {
             fullWidth
             margin="normal"
           />
+          <label style={{ marginTop: "20px" }}>Password</label>
+          <TextField
+            label="Password"
+            type="password"
+            variant="outlined"
+            fullWidth
+            margin="normal"
+          />
           <FormControlLabel
-            control={<Checkbox />}
+            control={<Checkbox sx={checkboxStyle} />}
             label={
               <Typography variant="body2">
-                I agree to the <Link href="#">Terms and Conditions</Link>
+                I agree to the <Link href="#" sx={{ color: 'black' }}>Terms and Conditions</Link>
               </Typography>
             }
           />
           <Button
-
-            
             fullWidth
-            sx={{ mt: 2, mb: 2 ,color:"white", backgroundColor: "#2B2B2B",}}
+            sx={{
+              mt: 2,
+              mb: 2,
+              color: "white",
+              backgroundColor: "black", // Button color
+              '&:hover': {
+                backgroundColor: "black", // Button hover color
+              },
+            }}
           >
-            Register Now
-          </Button>
-          <Divider sx={{ mb: 2 }}>or</Divider>
-          <Button variant="outlined" fullWidth sx={{ mb: 1 }}>
-            Sign in with Google
-          </Button>
-          <Button variant="outlined" fullWidth
-          >
-            Sign in with Twitter
+            Sign In
           </Button>
           <Typography variant="body2" align="center" sx={{ mt: 2 }}>
-            Already have an account? <Link href="#">Sign in</Link>
+            Don't have an account? <Link href="#" sx={{ color: 'black' }}>Register Now</Link>
           </Typography>
+        </Box>
+
+        <Box
+          sx={{
+            flex: 1,
+            display: { xs: "none", md: "block" },
+            position: "relative",
+          }}
+        >
+          <img
+            src={Black}
+            alt="Sign In"
+            style={{
+              width: "105%",
+              height: "100%",
+              objectFit: "cover",
+              borderRadius: "20px",
+              marginTop: "20px",
+              marginLeft: "70px",
+            }}
+          />
         </Box>
       </Box>
     </Container>

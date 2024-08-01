@@ -13,7 +13,7 @@ import teamwork from "../assets/teamwork.webp";
 
 const TeamPage = () => {
   return (
-    <Container maxWidth="lg">
+    <Container maxWidth="lg" >
       <Box
         sx={{
           display: "flex",
@@ -22,6 +22,7 @@ const TeamPage = () => {
           justifyContent: "space-between",
           minHeight: "40vh",
           padding: "4rem 0",
+          marginTop: "70px",
         }}
       >
         <Box sx={{ maxWidth: "50%" }}>
