@@ -63,7 +63,7 @@ const TeamPage = () => {
             sx={{
               fontSize: "0.75rem",
               padding: "0.5rem 1rem",
-              backgroundColor: "rgb(66,66,66)",
+              backgroundColor: "rgb(33,33,33)",
               "&:hover": {
                 backgroundColor: "rgb(66,66,66)",
               },
@@ -79,7 +79,7 @@ const TeamPage = () => {
               height="200"
               image={teamwork}
               borderRadius="5"
-              sx={{ maxWidth: "90%", objectFit: "cover",height:"140",marginTop:"50px",marginLeft:"20px",borderRadius:"5px"}}
+              sx={{ maxWidth: "90%", objectFit: "cover",height:"140",marginTop:"10px",marginLeft:"20px",borderRadius:"5px"}}
               alt="Top Notch Services"
             />
             <CardContent>
