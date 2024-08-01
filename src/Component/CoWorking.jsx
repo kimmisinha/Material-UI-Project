@@ -9,19 +9,13 @@ const CoWorking = () => {
     <Container>
       <Box textAlign="center" my={4}>
         <Typography
-          variant="h5"
+          variant="h7"
           component="h3"
-          gutterBottom
-          sx={{ fontWeight: 600, marginTop: "250px" }}
+          sx={{ fontWeight: 900, marginTop: "250px", padding: "10px" }}
         >
           Co-Working
         </Typography>
-        <Typography
-          variant="h4"
-          component="h2"
-          gutterBottom
-          sx={{ fontWeight: "bold" }}
-        >
+        <Typography variant="h4" component="h2" sx={{ fontWeight: "bold" }}>
           Build something
         </Typography>
         <Typography
@@ -32,18 +26,18 @@ const CoWorking = () => {
             fontSize: "20px",
             fontFamily: "Roboto, sans-serif",
             color: "rgb(96 125 139 / 59%)",
+            paddingTop: "10px",
           }}
         >
-          Put the potentially record low maximum sea ice extent this year down
+          Put the potentially record low maximum sea ice extent this year down <br />
           to low ice.
-          <br />
-          According to the National Oceanic and Atmospheric <br />Administration,
-          Ted, Scambos.
+          According to the National Oceanic and Atmospheric <br />
+          Administration, Ted, Scambos.
         </Typography>
       </Box>
       <Grid container spacing={6} justifyContent="center">
-        <Grid item xs={12} sm={6} md={4}>
-          <Paper elevation={3} style={{ padding: "20px", textAlign: "center" }}>
+        <Grid item xs={12} sm={6} md={4} style={{ padding: "40px", textAlign: "center",  border: '0px solid grey' }}>
+          {/* <Paper elevation={3} style={{ padding: "20px", textAlign: "center",  border: '0px solid grey' }}> */}
             <Box
               sx={{
                 display: "flex",
@@ -55,6 +49,7 @@ const CoWorking = () => {
                 backgroundColor: "black",
                 margin: "0 auto",
                 marginBottom: "10px",
+                border: '0px solid grey' 
               }}
             >
               <BarChartIcon style={{ color: "white", fontSize: "2em" }} />
@@ -62,14 +57,17 @@ const CoWorking = () => {
             <Typography variant="h6" sx={{ fontWeight: "bold" }}>
               Excellent Services
             </Typography>
-            <Typography variant="body2" sx={{ color: "rgb(96 125 139 / 59%)", fontSize: "16px" }}>
+            <Typography
+              variant="body2"
+              sx={{ color: "rgb(96 125 139 / 59%)", fontSize: "16px",padding:"15px" }}
+            >
               Some quick example text to build on the card title and make up the
               bulk of the card's content.
             </Typography>
-          </Paper>
+          {/* </Paper> */}
         </Grid>
-        <Grid item xs={12} sm={6} md={4}>
-          <Paper elevation={3} style={{ padding: "20px", textAlign: "center" }}>
+        <Grid item xs={12} sm={6} md={4} style={{ padding: "40px", textAlign: "center", border: "none" }}>
+          {/* <Paper elevation={3} style={{ padding: "20px", textAlign: "center", border: "none" }}> */}
             <Box
               sx={{
                 display: "flex",
@@ -88,14 +86,17 @@ const CoWorking = () => {
             <Typography variant="h6" gutterBottom sx={{ fontWeight: "bold" }}>
               Grow Your Market
             </Typography>
-            <Typography variant="body2" sx={{ color: "rgb(96 125 139 / 59%)", fontSize: "16px" }}>
+            <Typography
+              variant="body2"
+              sx={{ color: "rgb(96 125 139 / 59%)", fontSize: "16px",padding:"15px" }}
+            >
               Some quick example text to build on the card title and make up the
               bulk of the card's content.
             </Typography>
-          </Paper>
+          {/* </Paper> */}
         </Grid>
-        <Grid item xs={12} sm={6} md={4}>
-          <Paper elevation={3} style={{ padding: "20px", textAlign: "center" }}>
+        <Grid item xs={12} sm={6} md={4} style={{ padding: "40px", textAlign: "center", border: "none" }}>
+          {/* <Paper elevation={3} style={{ padding: "20px", textAlign: "center", border: "none" }}> */}
             <Box
               sx={{
                 display: "flex",
@@ -114,11 +115,14 @@ const CoWorking = () => {
             <Typography variant="h6" gutterBottom sx={{ fontWeight: "bold" }}>
               Launch Time
             </Typography>
-            <Typography variant="body2" sx={{ color: "rgb(96 125 139 / 59%)", fontSize: "16px" }}>
+            <Typography
+              variant="body2"
+              sx={{ color: "rgb(96 125 139 / 59%)", fontSize: "16px",padding:"15px" }}
+            >
               Some quick example text to build on the card title and make up the
               bulk of the card's content.
             </Typography>
-          </Paper>
+          {/* </Paper> */}
         </Grid>
       </Grid>
     </Container>

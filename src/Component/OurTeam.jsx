@@ -21,7 +21,7 @@ const teamMembers = [
     title: "Web Developer",
     image: team1,
     socials: [
-      <Twitter sx={{ color: 'rgb(49,151,243)' }} />,
+      <Twitter sx={{ color: 'rgb(49,11,243)' }} />,
       <LinkedIn sx={{ color: 'rgb(49,151,243)' }} />,
       <Facebook sx={{ color: 'red' }} />,
     ],
@@ -60,13 +60,13 @@ const teamMembers = [
 
 const OurTeam = () => {
   return (
-<Container maxWidth={false} disableGutters >
-<Box textAlign="center" sx={{ padding: '5rem 70rem 10rem 12rem', marginTop: "130px" }}>
+    <Container maxWidth="lg">
+      <Box textAlign="center" sx={{ py: 5, marginTop: "130px" }}>
         <Typography
           variant="h7"
           component="h3"
           gutterBottom
-          sx={{ fontWeight: "700" }}
+          sx={{ fontWeight: "600" }}
         >
           Our Team
         </Typography>
@@ -102,7 +102,7 @@ const OurTeam = () => {
               <CardMedia
                 component="img"
                 height="290"
-                width="350"
+                width="400"
                 image={member.image}
                 alt={member.name}
                 // borderRadius="30px"
