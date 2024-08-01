@@ -11,7 +11,7 @@ const CoWorking = () => {
         <Typography
           variant="h7"
           component="h3"
-          sx={{ fontWeight: 900, marginTop: "250px", padding: "10px" }}
+          sx={{ fontWeight: 900, marginTop: "200px", padding: "10px" }}
         >
           Co-Working
         </Typography>
@@ -35,8 +35,8 @@ const CoWorking = () => {
           Administration, Ted, Scambos.
         </Typography>
       </Box>
-      <Grid container spacing={6} justifyContent="center">
-        <Grid item xs={12} sm={6} md={4} style={{ padding: "40px", textAlign: "center",  border: '0px solid grey' }}>
+      <Grid container spacing={5} justifyContent="center">
+        <Grid item xs={12} sm={6} md={4} style={{ padding: "60px", textAlign: "center",  border: '0px solid grey' }}>
           {/* <Paper elevation={3} style={{ padding: "20px", textAlign: "center",  border: '0px solid grey' }}> */}
             <Box
               sx={{
@@ -46,7 +46,7 @@ const CoWorking = () => {
                 width: "60px",
                 height: "60px",
                 borderRadius: "50%",
-                backgroundColor: "black",
+                backgroundColor: "rgb(38,50,56)",
                 margin: "0 auto",
                 marginBottom: "10px",
                 border: '0px solid grey' 
@@ -66,7 +66,7 @@ const CoWorking = () => {
             </Typography>
           {/* </Paper> */}
         </Grid>
-        <Grid item xs={12} sm={6} md={4} style={{ padding: "40px", textAlign: "center", border: "none" }}>
+        <Grid item xs={12} sm={6} md={4} style={{ padding: "60px", textAlign: "center", border: "none" }}>
           {/* <Paper elevation={3} style={{ padding: "20px", textAlign: "center", border: "none" }}> */}
             <Box
               sx={{
@@ -76,7 +76,7 @@ const CoWorking = () => {
                 width: "60px",
                 height: "60px",
                 borderRadius: "50%",
-                backgroundColor: "black",
+                backgroundColor: "rgb(38,50,56)",
                 margin: "0 auto",
                 marginBottom: "10px",
               }}
@@ -95,7 +95,7 @@ const CoWorking = () => {
             </Typography>
           {/* </Paper> */}
         </Grid>
-        <Grid item xs={12} sm={6} md={4} style={{ padding: "40px", textAlign: "center", border: "none" }}>
+        <Grid item xs={12} sm={6} md={4} style={{ padding: "60px", textAlign: "center", border: "none" }}>
           {/* <Paper elevation={3} style={{ padding: "20px", textAlign: "center", border: "none" }}> */}
             <Box
               sx={{
@@ -105,7 +105,7 @@ const CoWorking = () => {
                 width: "60px",
                 height: "60px",
                 borderRadius: "50%",
-                backgroundColor: "black",
+                backgroundColor: "rgb(38,50,56)",
                 margin: "0 auto",
                 marginBottom: "10px",
               }}

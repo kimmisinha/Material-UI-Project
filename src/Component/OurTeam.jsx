@@ -21,9 +21,9 @@ const teamMembers = [
     title: "Web Developer",
     image: team1,
     socials: [
-      <Twitter sx={{ color: 'rgb(49,11,243)' }} />,
-      <LinkedIn sx={{ color: 'rgb(49,151,243)' }} />,
-      <Facebook sx={{ color: 'red' }} />,
+      <Twitter sx={{ color: "rgb(49,151,243)" }} />,
+      <LinkedIn sx={{ color: "rgb(49,151,243)" }} />,
+      <Facebook sx={{ color: "red" }} />,
     ],
   },
   {
@@ -31,9 +31,9 @@ const teamMembers = [
     title: "Marketing Specialist",
     image: team2,
     socials: [
-      <Twitter sx={{ color: 'rgb(49,151,243)' }} />,
-      <LinkedIn sx={{ color: 'rgb(49,151,243)' }} />,
-      <Facebook sx={{ color: 'red' }} />,
+      <Twitter sx={{ color: "rgb(49,151,243)" }} />,
+      <LinkedIn sx={{ color: "rgb(49,151,243)" }} />,
+      <Facebook sx={{ color: "red" }} />,
     ],
   },
   {
@@ -41,9 +41,9 @@ const teamMembers = [
     title: "UI/UX Designer",
     image: team3,
     socials: [
-      <Twitter sx={{ color: 'rgb(49,151,243)' }} />,
-      <LinkedIn sx={{ color: 'rgb(49,151,243)' }} />,
-      <Facebook sx={{ color: 'red' }} />,
+      <Twitter sx={{ color: "rgb(49,151,243)" }} />,
+      <LinkedIn sx={{ color: "rgb(49,151,243)" }} />,
+      <Facebook sx={{ color: "red" }} />,
     ],
   },
   {
@@ -51,17 +51,17 @@ const teamMembers = [
     title: "Founder and CEO",
     image: team4,
     socials: [
-      <Twitter sx={{ color: 'rgb(49,151,243)' }} />,
-      <LinkedIn sx={{ color: 'rgb(49,151,243)' }} />,
-      <Facebook sx={{ color: 'red' }} />,
+      <Twitter sx={{ color: "rgb(49,151,243)" }} />,
+      <LinkedIn sx={{ color: "rgb(49,151,243)" }} />,
+      <Facebook sx={{ color: "red" }} />,
     ],
   },
 ];
 
 const OurTeam = () => {
   return (
-    <Container  maxWidth={"xl"} style={{width:"100%"}}>
-      <Box textAlign="center" sx={{ py: 5, marginTop: "130px" }}>
+    <Container maxWidth={"xl"} style={{ width: "100%" }}>
+      <Box textAlign="center" sx={{ py: 5, marginTop: "0px" }}>
         <Typography
           variant="h7"
           component="h3"
@@ -95,39 +95,42 @@ const OurTeam = () => {
           maximum.
         </Typography>
       </Box>
-      <Grid container spacing={7} sx={{paddingLeft:"20px"}}>
+      <Grid container spacing={7} sx={{ padding: "0px 30px 0px 30px" }}>
         {teamMembers.map((member, index) => (
           <Grid item md={3} key={index} margin={"0px"}>
-            <Card>
-              <CardMedia
-                component="img"
-                height="290"
-                width="400"
-                image={member.image}
-                alt={member.name}
-               margin="20px"
-               marginTop="25px"
-              />
-              <CardContent>
-                <Typography variant="h6" component="h2" sx={{ fontWeight: "bold" }}>
-                  {member.name}
-                </Typography>
-                <Typography variant="body2" sx={{ fontWeight: "bold" ,color: "rgb(96 125 139 / 59%)"}}>
-                  {member.title}
-                </Typography>
-                <Box
-                  mt={4}
-                  display="flex"
-                  justifyContent="center"
-                >
-                  {member.socials.map((icon, index) => (
-                    <IconButton key={index} aria-label="social icon">
-                      {icon}
-                    </IconButton>
-                  ))}
-                </Box>
-              </CardContent>
-            </Card>
+            <CardMedia
+              component="img"
+              height="290"
+              width="400"
+              image={member.image}
+              alt={member.name}
+              margin="20px"
+              marginTop="25px"
+              sx={{ borderRadius: "10%" }} 
+
+            />
+            <CardContent>
+              <Typography
+                variant="h6"
+                component="h2"
+                sx={{ fontWeight: "bold" ,textAlign:"center"}}
+              >
+                {member.name}
+              </Typography>
+              <Typography
+                variant="body2"
+                sx={{ fontWeight: "bold", color: "rgb(96 125 139 / 59%)",textAlign:"center" }}
+              >
+                {member.title}
+              </Typography>
+              <Box mt={4} display="flex" justifyContent="center">
+                {member.socials.map((icon, index) => (
+                  <IconButton key={index} aria-label="social icon">
+                    {icon}
+                  </IconButton>
+                ))}
+              </Box>
+            </CardContent>
           </Grid>
         ))}
       </Grid>

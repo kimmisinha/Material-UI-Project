@@ -7,6 +7,7 @@ import {
   Typography,
   Container,
   Box,
+  Grid,
 } from "@mui/material";
 
 const ContactUs = () => {
@@ -16,8 +17,8 @@ const ContactUs = () => {
     backgroundColor: "#2B2B2B",
     color: "white",
     width: "560px",
-    hight:"300px"
   };
+
   return (
     <Container maxWidth="sm">
       <Box
@@ -29,10 +30,10 @@ const ContactUs = () => {
         }}
       >
         <Typography
-          variant="h5"
-          component="h1"
+          variant="h7"
+          component="h3"
           gutterBottom
-          sx={{ fontWeight: 600, marginTop: "250px" }}
+          sx={{ fontWeight: 900, marginTop: "100px" }}
         >
           Contact Us
         </Typography>
@@ -40,6 +41,7 @@ const ContactUs = () => {
           variant="h4"
           component="h2"
           gutterBottom
+          color="rgb(38,50,56)"
           sx={{ fontWeight: "bold" }}
         >
           Want to work with us?
@@ -56,18 +58,24 @@ const ContactUs = () => {
         >
           Complete this form and we will get back to you in 24 hours.
         </Typography>
-        <TextField
-          label="Full Name"
-          variant="outlined"
-          fullWidth
-          margin="normal"
-        />
-        <TextField
-          label="Email Address"
-          variant="outlined"
-          fullWidth
-          margin="normal"
-        />
+        <Grid container spacing={2}>
+          <Grid item xs={6}>
+            <TextField
+              label="Full Name"
+              variant="outlined"
+              fullWidth
+              margin="normal"
+            />
+          </Grid>
+          <Grid item xs={6}>
+            <TextField
+              label="Email Address"
+              variant="outlined"
+              fullWidth
+              margin="normal"
+            />
+          </Grid>
+        </Grid>
         <TextField
           label="Message"
           variant="outlined"
@@ -76,14 +84,25 @@ const ContactUs = () => {
           multiline
           rows={4}
         />
-        <FormControlLabel
-          control={<Checkbox />}
-          label={
-            <Typography variant="body2">
-              I agree the Terms and Conditions 
-            </Typography>
-          }
-        />
+        {/* Applied alignItems: "start" to the parent Box of Checkbox and Label */}
+        <Box sx={{ alignItems: "stretch",flex:"start" }}>
+          <FormControlLabel 
+            control={
+              <Checkbox
+                sx={{
+                  "&.Mui-checked": {
+                    color: "black",
+                  },
+                }}
+              />
+            }
+            label={
+              <Typography variant="body2">
+                I agree to the Terms and Conditions
+              </Typography>
+            }
+          />
+        </Box>
         <Button
           variant="contained"
           color="primary"
